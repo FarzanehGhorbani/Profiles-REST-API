@@ -42,6 +42,8 @@ INSTALLED_APPS = [
     'profiles_api',
 ]
 
+AUTH_USER_MODEL = 'profiles_api.UserProfile' 
+
 MIDDLEWARE = [
     'django.middleware.security.SecurityMiddleware',
     'django.contrib.sessions.middleware.SessionMiddleware',
@@ -124,3 +126,4 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.0/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
+
